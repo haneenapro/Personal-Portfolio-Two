@@ -145,7 +145,8 @@ const Services = () => {
               <i className="uil uil-arrow-right services__button-icon"></i>{" "}
             </span>
 
-            <p>Update </p>
+            <p>Update One</p>
+
             {/* <div className="services__modal">
               <div className="services__modal-content">
                 <i className="uil uil-times services__modal-close"></i>
