@@ -12,12 +12,15 @@ import avatar from "../public/avatar.webp";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
+import gerichSS from "../public/gerichSS.png";
+import gpt from "../public/gpt.png";
+import genZ from "../public/genZ.png";
+import hcs from "../public/hcs.png";
+import pic from "../public/pic.jpg";
+import todo from "../public/to-do.png";
+import piano from "../public/piano.png";
+import ecommerce from "../public/ecommerce.png";
+import nexa from "../public/nexa.png";
 import { useState } from "react";
 import Services from "../components/Services";
 
@@ -86,12 +89,23 @@ export default function Home() {
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={avatar} layout="fill" objectFit="cover" />
           </div>
+          {/* */}
+          {/* <div className="relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden bg-clip-text inline-block md:h-96 md:w-96 border-radius-50%">
+            <Image
+              src={pic}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center 5%"
+            />
+          </div> */}
         </section>
         {/*  */}
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <h3 className="text-3xl py-1 dark:text-white font-semibold">
+              Services I offer
+            </h3>
+            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-white">
               I am a web developer and designer. I can design websites and web
               applications using tools like figma. I can develop web apps using
               Visual Website Builder like{" "}
@@ -100,7 +114,7 @@ export default function Home() {
               </span>
               and wordpress.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-white">
               I can also develop web applications using
               <span className="text-teal-500 pr-2 pl-2 dark:text-teal-300">
                 JavaScript
@@ -114,7 +128,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             {/*  */}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#243c5a]">
+            <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#243c5a] ">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Modern Designs: Figma
@@ -131,7 +145,7 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">Illustrator</p>
             </div>
             {/*  */}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#243c5a]">
+            <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#243c5a] ">
               <Image src={consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Visual Website Builder: Webflow
@@ -150,7 +164,7 @@ export default function Home() {
             </div>
 
             {/*  */}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#243c5a]">
+            <div className="basis-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-[#243c5a] ">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Front-End Development
@@ -176,73 +190,278 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
+            <h3 className="text-3xl py-1 dark:text-white font-semibold">
+              Portfolio
+            </h3>
+            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-white">
               Below are some of the projects i have done.
             </p>
           </div>
 
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
               <Image
-                src={web1}
+                src={gpt}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
+              <div className="absolute h-full w-full bg-white/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-200 py-5 bg-clip-text">
+                  GPT Site
+                </h1>
+                <div>
+                  <a
+                    href="https://github.com/haneenapro/gpt_3.git"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>View Code</button>
+                  </a>
+                  <a
+                    href="https://haneena-gpt3.netlify.app/"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>Live Site</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            {/*  */}
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
               <Image
-                src={web2}
+                src={gerichSS}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
+              <div className="absolute h-full w-full bg-white/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-500 py-5 bg-clip-text">
+                  My Restaurant
+                </h1>
+                <div>
+                  <a
+                    href="https://github.com/haneenapro/My-Restaurant.git"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>View Code</button>
+                  </a>
+                  <a
+                    href="https://haneena-restaurant.netlify.app/"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>Live Site</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
+
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
               <Image
-                src={web3}
+                src={ecommerce}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
+              <div className="absolute h-full w-full bg-black/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-200 py-5 bg-clip-text">
+                  E-commerce Site
+                </h1>
+                <div>
+                  <a
+                    href="https://github.com/haneenapro/E-commerce-Site.git"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>View Code</button>
+                  </a>
+                  <a
+                    href="https://haneena-ecommerce-site.netlify.app/"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>Live Site</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
+
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
               <Image
-                src={web4}
+                src={hcs}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
+              <div className="absolute h-full w-full bg-black/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-200 py-5 bg-clip-text">
+                  Health Consultation System
+                </h1>
+                <div>
+                  <a
+                    href="https://github.com/haneenapro/health-app.git"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>View Code</button>
+                  </a>
+                  <a
+                    href="https://health-consulation-system.netlify.app/"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>Live Site</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
               <Image
-                src={web5}
+                src={genZ}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
+              <div className="absolute h-full w-full bg-black/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-300 py-5 bg-clip-text">
+                  Mobile App Share Market
+                </h1>
+                <div>
+                  <a
+                    href="https://www.figma.com/file/QnxXT682ZBwbTakOX6KWHY/Untitled?type=design&mode=design&t=vq7LKz3nbZUnZCS9-1"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>View Design</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
               <Image
-                src={web6}
+                src={piano}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
+              <div className="absolute h-full w-full bg-black/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-300 py-5 bg-clip-text">
+                  Piano
+                </h1>
+                <div>
+                  <a
+                    href="https://github.com/haneenapro/Piano-jS.git"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>View Code</button>
+                  </a>
+                  <a
+                    href="https://haneena-piano-javascript.netlify.app/"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>Live Site</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* <div className="group basis-1/3 flex-1 relative overflow-hidden">
+              <Image
+                src={todo}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+              <div className="absolute h-full w-full bg-black/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-300 py-5 bg-clip-text">
+                  To Do List
+                </h1>
+                <div>
+                  <a
+                    href="https://github.com/haneenapro/To-Do-List.git"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>View Code</button>
+                  </a>
+                  <a
+                    href="https://haneena-todo.netlify.app/"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>Live Site</button>
+                  </a>
+                </div>
+              </div>
+            </div> */}
+          </div>
+
+          <div>
+            <p className="text-lg py-2 leading-8 text-gray-800 dark:text-white">
+              Published Sites: Made using Webflow
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
+              <Image
+                src={nexa}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+              <div className="absolute h-full w-full bg-white/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-200 py-5 bg-clip-text">
+                  Nexa Equity
+                </h1>
+                <div>
+                  <a
+                    href="https://www.nexaequity.com/"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button>Website</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/*  */}
+            <div className="group basis-1/3 flex-1 relative overflow-hidden">
+              <Image
+                src={nexa}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+              <div className="absolute h-full w-full bg-white/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <h1 className="font-semibold text-xl text-teal-500 py-5 bg-clip-text">
+                  Taurus
+                </h1>
+                <div>
+                  <a
+                    href="#"
+                    class="bg-black text-white py-2 px-5 ml-2"
+                    target="_blank"
+                  >
+                    <button> Website</button>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-
-        {/*  */}
-        <section>
-          <Services />
         </section>
       </main>
     </div>
