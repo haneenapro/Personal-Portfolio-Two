@@ -21,6 +21,7 @@ import todo from "../public/to-do.png";
 import piano from "../public/piano.png";
 import ecommerce from "../public/ecommerce.png";
 import nexa from "../public/nexa.png";
+import white from "../public/white.png";
 import { useState } from "react";
 import Services from "../components/Services";
 
@@ -440,13 +441,13 @@ export default function Home() {
             {/*  */}
             <div className="group basis-1/3 flex-1 relative overflow-hidden">
               <Image
-                src={nexa}
+                src={white}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
               />
-              <div className="absolute h-full w-full bg-white/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+              {/* <div className="absolute h-full w-full bg-white/30 flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                 <h1 className="font-semibold text-xl text-teal-500 py-5 bg-clip-text">
                   Taurus
                 </h1>
@@ -459,7 +460,7 @@ export default function Home() {
                     <button> Website</button>
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
