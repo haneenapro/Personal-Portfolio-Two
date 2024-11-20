@@ -47,7 +47,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="https://docs.google.com/document/d/1jQtMaWQr56G0ARTSc5W7gN3QrMfSM5afosP_gywYctY/edit?usp=sharing"
+                  href="https://docs.google.com/document/d/13F4WeUtOpyHf6r9RUMJbsEPI7G9F5tpJj6Zt5SMr6WA/edit?tab=t.0"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -79,7 +79,7 @@ export default function Home() {
               <AiFillMail />
             </a>
             <a
-              href="https://www.linkedin.com/in/haneena-zainab-871a53220/"
+              href="https://www.linkedin.com/in/haneena-zainab-a889a3339/"
               target="_blank"
               rel="noreferrer"
             >
